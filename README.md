@@ -44,70 +44,115 @@ See [Benchmark Notes](docs/benchmark-notes.md) for construction details, query e
 
 ## Visual Overview
 
-The figures below highlight what each work contributes: benchmark construction, visual search trajectories, query repair, evidence verification, or agent training. Click a figure to open the corresponding paper or project. Images are loaded from official sources; attribution and usage notes are listed in [Image Sources](docs/image-sources.md).
+Each work is presented separately below in release order. Click a figure to open the corresponding paper or project. Images are loaded from official sources; attribution and usage notes are listed in [Image Sources](docs/image-sources.md).
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://mmsearch.github.io/"><img src="https://mmsearch.github.io/static/images/overview_mv/image/teaser.png" alt="MMSearch benchmark overview" width="100%"></a><br>
-      <sub><b>MMSearch.</b> Decomposes multimodal search into measurable stages, from query rewriting to end-to-end answer generation.</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://agentvista-bench.github.io/"><img src="https://agentvista-bench.github.io/static/images/data_statistics.png" alt="AgentVista task domain distribution" width="100%"></a><br>
-      <sub><b>AgentVista.</b> Spans seven real-world domains and combines web, vision, image processing, and code tools in long-horizon tasks.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/Ruiyang-061X/VSearcher"><img src="https://raw.githubusercontent.com/Ruiyang-061X/VSearcher/main/.asset/method.png" alt="VSearcher training method" width="100%"></a><br>
-      <sub><b>VSearcher.</b> Converts synthetic long-horizon tasks into filtered SFT trajectories and real-web reinforcement learning.</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://arxiv.org/html/2602.13179v1"><img src="https://arxiv.org/html/2602.13179v1/x1.png" alt="V-QPP-Bench visual query preprocessing and retrieval" width="100%"></a><br>
-      <sub><b>V-QPP-Bench.</b> Repairs imperfect visual queries by selecting preprocessing tools and parameters before retrieval.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://mc-search-project.github.io/"><img src="https://mc-search-project.github.io/website/img2/teaser_fig_mc_search_2.png" alt="MC-Search benchmark and reasoning graph pipeline" width="100%"></a><br>
-      <sub><b>MC-Search.</b> Builds long-chain multimodal questions and represents their solutions as structured reasoning graphs.</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://arxiv.org/html/2602.02185v1"><img src="https://arxiv.org/html/2602.02185v1/x1.png" alt="VDR-Bench visual deep research motivation" width="100%"></a><br>
-      <sub><b>VDR-Bench.</b> Removes text-only and whole-image shortcuts by requiring cropped-image search and multi-turn visual grounding.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://mmsearch-plus.github.io/"><img src="https://mmsearch-plus.github.io/static/images/teaser.png" alt="MMSearch-Plus agentic visual search comparison" width="100%"></a><br>
-      <sub><b>MMSearch-Plus.</b> Uses local visual clues, region selection, and provenance-aware browsing instead of whole-image search alone.</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://merrin-benchmark.github.io/"><img src="https://merrin-benchmark.github.io/static/figure.png" alt="MERRIN multimodal evidence reasoning and noisy web routes" width="100%"></a><br>
-      <sub><b>MERRIN.</b> Tests implicit modality selection across visual, audio, and textual evidence under noisy or conflicting web sources.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/MMBrowseComp/MM-BrowseComp"><img src="https://raw.githubusercontent.com/MMBrowseComp/MM-BrowseComp/main/images/case.png" alt="MM-BrowseComp multimodal browsing examples" width="100%"></a><br>
-      <sub><b>MM-BrowseComp.</b> Turns visual clues into verifiable multi-hop web evidence, with checklists for each required reasoning step.</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://halcyon-zhang.github.io/BrowseComp-V3/"><img src="https://halcyon-zhang.github.io/BrowseComp-V3/static/images/overview.png" alt="BrowseComp-V3 benchmark construction pipeline" width="100%"></a><br>
-      <sub><b>BrowseComp-V3.</b> Combines visual, vertical, and verifiable browsing with expert-authored sub-goals and trajectories.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://arxiv.org/html/2605.07510v1"><img src="https://arxiv.org/html/2605.07510v1/x1.png" alt="InterLV-Search interleaved language and vision search levels" width="100%"></a><br>
-      <sub><b>InterLV-Search.</b> Treats images as control pivots for later searches, including multi-branch language-vision trajectories.</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/ZhengboZhang/VisBrowse-Bench"><img src="https://raw.githubusercontent.com/ZhengboZhang/VisBrowse-Bench/main/images/overview.png" alt="VisBrowse-Bench visual-native browsing examples" width="100%"></a><br>
-      <sub><b>VisBrowse-Bench.</b> Covers visual-native questions that require image search, reverse-image search, cropping, and cross-image reasoning.</sub>
-    </td>
-  </tr>
-</table>
+### MMSearch
+
+<p align="center">
+  <a href="https://mmsearch.github.io/"><img src="https://mmsearch.github.io/static/images/overview_mv/image/teaser.png" alt="MMSearch benchmark overview" width="88%"></a><br>
+  <sub><b>Figure.</b> Representative questions across news and knowledge domains, showing the breadth of image-grounded search tasks.</sub>
+</p>
+
+**Core contribution.** MMSearch decomposes multimodal search into query rewriting, reranking, webpage summarization, and end-to-end answer generation so that each stage can be diagnosed independently.
+
+### MMSearch-Plus
+
+<p align="center">
+  <a href="https://mmsearch-plus.github.io/"><img src="https://mmsearch-plus.github.io/static/images/teaser.png" alt="MMSearch-Plus agentic visual search comparison" width="88%"></a><br>
+  <sub><b>Figure.</b> A comparison of no search, whole-image search, and agentic search that zooms into a decisive local clue.</sub>
+</p>
+
+**Core contribution.** MMSearch-Plus emphasizes provenance, region selection, and targeted image or text search when the answer depends on small visual, spatial, or temporal details.
+
+### MM-BrowseComp
+
+<p align="center">
+  <a href="https://github.com/MMBrowseComp/MM-BrowseComp"><img src="https://raw.githubusercontent.com/MMBrowseComp/MM-BrowseComp/main/images/case.png" alt="MM-BrowseComp multimodal browsing examples" width="88%"></a><br>
+  <sub><b>Figure.</b> Two examples that turn an input image into a sequence of location, entity, and attribute checks on the web.</sub>
+</p>
+
+**Core contribution.** MM-BrowseComp makes difficult multimodal browsing verifiable through explicit checklists, separating valid evidence chains from lucky final answers.
+
+### VDR-Bench
+
+<p align="center">
+  <a href="https://arxiv.org/html/2602.02185v1"><img src="https://arxiv.org/html/2602.02185v1/x1.png" alt="VDR-Bench visual deep research motivation" width="88%"></a><br>
+  <sub><b>Figure.</b> Why text leakage and whole-image retrieval create shortcuts, and how cropped visual search makes image evidence necessary.</sub>
+</p>
+
+**Core contribution.** VDR-Bench introduces cropped-image search, multi-turn visual forcing, and entity-sequence recall to evaluate genuine visual deep-research behavior.
+
+### BrowseComp-V3
+
+<p align="center">
+  <a href="https://halcyon-zhang.github.io/BrowseComp-V3/"><img src="https://halcyon-zhang.github.io/BrowseComp-V3/static/images/overview.png" alt="BrowseComp-V3 benchmark construction pipeline" width="88%"></a><br>
+  <sub><b>Figure.</b> The human-and-tool-assisted pipeline for constructing questions, sub-goals, evidence, and gold browsing trajectories.</sub>
+</p>
+
+**Core contribution.** BrowseComp-V3 combines visual, vertical, and verifiable browsing while scoring both final success and completion of expert-authored intermediate goals.
+
+### V-QPP-Bench
+
+<p align="center">
+  <a href="https://arxiv.org/html/2602.13179v1"><img src="https://arxiv.org/html/2602.13179v1/x1.png" alt="V-QPP-Bench visual query preprocessing and retrieval" width="88%"></a><br>
+  <sub><b>Figure.</b> Standard retrieval failures on imperfect visual queries versus successful retrieval after agent-selected image repair.</sub>
+</p>
+
+**Core contribution.** V-QPP-Bench evaluates whether an agent can choose the correct preprocessing tool and parameters before multimodal retrieval begins.
+
+### AgentVista
+
+<p align="center">
+  <a href="https://agentvista-bench.github.io/"><img src="https://agentvista-bench.github.io/static/images/data_statistics.png" alt="AgentVista task domain distribution" width="88%"></a><br>
+  <sub><b>Figure.</b> The benchmark's seven real-world domains and their fine-grained task categories.</sub>
+</p>
+
+**Core contribution.** AgentVista evaluates generalist agents on realistic long-horizon tasks that combine web search, visual understanding, image processing, and code execution.
+
+### MC-Search
+
+<p align="center">
+  <a href="https://mc-search-project.github.io/"><img src="https://mc-search-project.github.io/website/img2/teaser_fig_mc_search_2.png" alt="MC-Search benchmark and reasoning graph pipeline" width="88%"></a><br>
+  <sub><b>Figure.</b> Benchmark construction, five multimodal reasoning-graph patterns, and the agentic retrieval pipeline.</sub>
+</p>
+
+**Core contribution.** MC-Search represents long search processes with structured sub-questions, supporting facts, and intermediate answers rather than evaluating only the final response.
+
+### VSearcher
+
+<p align="center">
+  <a href="https://github.com/Ruiyang-061X/VSearcher"><img src="https://raw.githubusercontent.com/Ruiyang-061X/VSearcher/main/.asset/method.png" alt="VSearcher training method" width="88%"></a><br>
+  <sub><b>Figure.</b> Rejection-sampled trajectory fine-tuning followed by reinforcement learning in a real web environment.</sub>
+</p>
+
+**Core contribution.** VSearcher synthesizes long-horizon multimodal tasks, filters their trajectories for SFT, and improves web-search behavior with GRPO.
+
+### VisBrowse-Bench
+
+<p align="center">
+  <a href="https://github.com/ZhengboZhang/VisBrowse-Bench"><img src="https://raw.githubusercontent.com/ZhengboZhang/VisBrowse-Bench/main/images/overview.png" alt="VisBrowse-Bench visual-native browsing examples" width="88%"></a><br>
+  <sub><b>Figure.</b> Visual-native questions spanning products, landmarks, culture, science, media, and other real-world domains.</sub>
+</p>
+
+**Core contribution.** VisBrowse-Bench requires agents to obtain visual evidence during browsing through image search, reverse-image search, cropping, and cross-image reasoning.
+
+### MERRIN
+
+<p align="center">
+  <a href="https://merrin-benchmark.github.io/"><img src="https://merrin-benchmark.github.io/static/figure.png" alt="MERRIN multimodal evidence reasoning and noisy web routes" width="88%"></a><br>
+  <sub><b>Figure.</b> Visual, audio, and textual evidence routes, including failure paths caused by missing, secondary, or conflicting sources.</sub>
+</p>
+
+**Core contribution.** MERRIN tests implicit modality selection and evidence reasoning on the noisy open web rather than assuming that every useful source is clean and consistent.
+
+### InterLV-Search
+
+<p align="center">
+  <a href="https://arxiv.org/html/2605.07510v1"><img src="https://arxiv.org/html/2605.07510v1/x1.png" alt="InterLV-Search interleaved language and vision search levels" width="88%"></a><br>
+  <sub><b>Figure.</b> Three levels of language-vision interaction, progressing from shallow visual use to multi-branch visual pivots.</sub>
+</p>
+
+**Core contribution.** InterLV-Search treats visual evidence as a control signal that repeatedly determines later queries, tool calls, and search branches.
 
 ## Foundational Search Benchmarks
 
