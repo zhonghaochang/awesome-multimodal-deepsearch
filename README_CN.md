@@ -52,8 +52,8 @@
       <sub><b>MMSearch.</b> 将多模态搜索拆成可独立评测的阶段，覆盖 Query 改写、重排、网页总结与端到端回答。</sub>
     </td>
     <td width="50%" valign="top">
-      <a href="https://agentvista-bench.github.io/"><img src="https://agentvista-bench.github.io/static/images/data_examples.png" alt="AgentVista 任务示例" width="100%"></a><br>
-      <sub><b>AgentVista.</b> 为通用 Agent 构建真实长程任务，组合网页、视觉、图像处理与代码工具。</sub>
+      <a href="https://agentvista-bench.github.io/"><img src="https://agentvista-bench.github.io/static/images/data_statistics.png" alt="AgentVista 任务领域分布" width="100%"></a><br>
+      <sub><b>AgentVista.</b> 覆盖七类真实领域，并在长程任务中组合网页、视觉、图像处理与代码工具。</sub>
     </td>
   </tr>
   <tr>

@@ -56,7 +56,7 @@ If you maintain one of these projects and would like a figure changed or removed
 
 ## AgentVista
 
-- Figure: [task examples](https://agentvista-bench.github.io/static/images/data_examples.png)
+- Figure: [task domain distribution](https://agentvista-bench.github.io/static/images/data_statistics.png)
 - Official source: [AgentVista project page](https://agentvista-bench.github.io/)
 
 ## MERRIN

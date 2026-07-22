@@ -53,8 +53,8 @@ The figures below highlight what each work contributes: benchmark construction, 
       <sub><b>MMSearch.</b> Decomposes multimodal search into measurable stages, from query rewriting to end-to-end answer generation.</sub>
     </td>
     <td width="50%" valign="top">
-      <a href="https://agentvista-bench.github.io/"><img src="https://agentvista-bench.github.io/static/images/data_examples.png" alt="AgentVista task examples" width="100%"></a><br>
-      <sub><b>AgentVista.</b> Curates realistic long-horizon tasks for generalist agents using web, vision, image processing, and code tools.</sub>
+      <a href="https://agentvista-bench.github.io/"><img src="https://agentvista-bench.github.io/static/images/data_statistics.png" alt="AgentVista task domain distribution" width="100%"></a><br>
+      <sub><b>AgentVista.</b> Spans seven real-world domains and combines web, vision, image processing, and code tools in long-horizon tasks.</sub>
     </td>
   </tr>
   <tr>
