@@ -1,0 +1,206 @@
+[
+  {
+    "id": "mmsearch",
+    "name": "MMSearch",
+    "title": "Benchmarking the Potential of Large Models as Multi-modal Search Engines",
+    "released": "2024-09",
+    "venue": "ICLR 2025",
+    "scale": "300 queries across 14 subdomains",
+    "setting": "Staged search pipeline",
+    "process_evaluation": "stage-level",
+    "metrics": ["All", "End-to-end", "Requery", "Rerank", "Summarize"],
+    "categories": ["foundational", "pipeline-diagnosis"],
+    "links": {
+      "paper": "https://arxiv.org/abs/2409.12959",
+      "project": "https://mmsearch.github.io/",
+      "dataset": "https://huggingface.co/datasets/CaraJ/MMSearch"
+    }
+  },
+  {
+    "id": "mmsearch-plus",
+    "name": "MMSearch-Plus",
+    "title": "Benchmarking Provenance-Aware Search for Multimodal Browsing Agents",
+    "released": "2025-08",
+    "venue": "ICLR 2026",
+    "scale": "311 tasks",
+    "setting": "Open-web browsing",
+    "process_evaluation": "trajectory-analysis",
+    "metrics": ["Accuracy"],
+    "categories": ["foundational", "provenance", "visual-search"],
+    "links": {
+      "paper": "https://arxiv.org/abs/2508.21475",
+      "project": "https://mmsearch-plus.github.io/"
+    }
+  },
+  {
+    "id": "mm-browsecomp",
+    "name": "MM-BrowseComp",
+    "title": "A Comprehensive Benchmark for Multimodal Browsing Agents",
+    "released": "2025-08",
+    "venue": "arXiv",
+    "scale": "224 paper-version tasks; 400 repository-version tasks",
+    "setting": "Open-web browsing",
+    "process_evaluation": "checklist",
+    "metrics": ["Overall Accuracy", "Strict Accuracy", "Average Checklist Score"],
+    "categories": ["verifiable-browsing", "process-evaluation"],
+    "links": {
+      "paper": "https://arxiv.org/html/2508.13186v1",
+      "code": "https://github.com/MMBrowseComp/MM-BrowseComp"
+    }
+  },
+  {
+    "id": "vdr-bench",
+    "name": "VDR-Bench",
+    "title": "Rethinking Visual and Textual Search for Multimodal Large Language Models",
+    "released": "2026-02",
+    "venue": "ICML 2026",
+    "scale": "2,000 VQA instances",
+    "setting": "Web-scale visual search",
+    "process_evaluation": "entity-recall",
+    "metrics": ["Answer Accuracy", "Entity Recall"],
+    "categories": ["visual-native", "cropped-image-search"],
+    "links": {
+      "paper": "https://arxiv.org/html/2602.02185v1",
+      "code": "https://github.com/Osilly/Vision-DeepResearch"
+    }
+  },
+  {
+    "id": "browsecomp-v3",
+    "name": "BrowseComp-V3",
+    "title": "A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents",
+    "released": "2026-02",
+    "venue": "arXiv",
+    "scale": "300 questions and 383 images",
+    "setting": "Open-web browsing",
+    "process_evaluation": "sub-goals-and-process-score",
+    "metrics": ["Success Rate", "Process Score", "Pass@1"],
+    "categories": ["verifiable-browsing", "process-evaluation"],
+    "links": {
+      "paper": "https://arxiv.org/abs/2602.12876",
+      "html": "https://arxiv.org/html/2602.12876v2",
+      "project": "https://halcyon-zhang.github.io/BrowseComp-V3/"
+    }
+  },
+  {
+    "id": "v-qpp-bench",
+    "name": "V-QPP-Bench",
+    "title": "Fix Before Search: Benchmarking Agentic Query Visual Pre-processing in Multimodal Retrieval-augmented Generation",
+    "released": "2026-02",
+    "venue": "arXiv",
+    "scale": "46,700 imperfect visual queries",
+    "setting": "Controlled MRAG",
+    "process_evaluation": "tool-and-parameter-score",
+    "metrics": ["Tool Selection Accuracy", "Parameter Score", "Retrieval Recall@K", "Accuracy"],
+    "categories": ["query-robustness", "visual-preprocessing"],
+    "links": {
+      "paper": "https://arxiv.org/abs/2602.13179",
+      "html": "https://arxiv.org/html/2602.13179v1",
+      "code": "https://github.com/phycholosogy/VQQP_Bench"
+    }
+  },
+  {
+    "id": "agentvista",
+    "name": "AgentVista",
+    "title": "Evaluating Multimodal Agents in Ultra-Challenging Realistic Visual Scenarios",
+    "released": "2026-02",
+    "venue": "arXiv",
+    "scale": "209 tasks and 308 images",
+    "setting": "Open-web and hybrid-tool environment",
+    "process_evaluation": "trajectory-analysis",
+    "metrics": ["Final-answer Accuracy", "Tool Distribution", "Tool Ablation", "Pass@k"],
+    "categories": ["generalist-agent", "hybrid-tools"],
+    "links": {
+      "paper": "https://arxiv.org/abs/2602.23166",
+      "html": "https://arxiv.org/html/2602.23166v1",
+      "project": "https://agentvista-bench.github.io/",
+      "code": "https://github.com/hkust-nlp/AgentVista",
+      "dataset": "https://huggingface.co/datasets/Warrieryes/AgentVista"
+    }
+  },
+  {
+    "id": "mc-search",
+    "name": "MC-Search",
+    "title": "Evaluating and Enhancing Multimodal Agentic Search with Structured Long Reasoning Chains",
+    "released": "2026-03",
+    "venue": "ICLR 2026 Oral",
+    "scale": "3,333 samples",
+    "setting": "Offline multimodal knowledge base",
+    "process_evaluation": "structured-process-metrics",
+    "metrics": ["F1", "Delta F1", "Golden F1", "Hit-per-Step", "Rollout Deviation", "Planning Accuracy"],
+    "categories": ["structured-reasoning", "process-evaluation", "training"],
+    "links": {
+      "paper": "https://arxiv.org/html/2603.00873",
+      "project": "https://mc-search-project.github.io/"
+    }
+  },
+  {
+    "id": "vsearcher",
+    "name": "VSearcher / MM-SearchExam",
+    "title": "Long-Horizon Multimodal Search Agent via Reinforcement Learning",
+    "released": "2026-03",
+    "venue": "arXiv",
+    "scale": "283 automatically synthesized MM-SearchExam tasks",
+    "setting": "Real web text search, image search, and visit tools",
+    "process_evaluation": "training-trajectories",
+    "metrics": ["Accuracy", "Reward", "Entropy", "Tool-call Count"],
+    "categories": ["agent-training", "reinforcement-learning", "long-horizon"],
+    "links": {
+      "paper": "https://arxiv.org/abs/2603.02795",
+      "html": "https://arxiv.org/html/2603.02795v2",
+      "code": "https://github.com/Ruiyang-061X/VSearcher",
+      "dataset": "https://github.com/Ruiyang-061X/VSearcher/tree/main/mmsearcheaxm"
+    }
+  },
+  {
+    "id": "visbrowse-bench",
+    "name": "VisBrowse-Bench",
+    "title": "Benchmarking Visual-Native Search for Multimodal Browsing Agents",
+    "released": "2026-03",
+    "venue": "arXiv",
+    "scale": "169 expert-authored VQA instances",
+    "setting": "Real web text, image, reverse-image, crop, and visit tools",
+    "process_evaluation": "trajectory-analysis",
+    "metrics": ["Accuracy"],
+    "categories": ["visual-native", "cross-image-reasoning"],
+    "links": {
+      "paper": "https://arxiv.org/abs/2603.16289",
+      "html": "https://arxiv.org/html/2603.16289v1",
+      "code": "https://github.com/ZhengboZhang/VisBrowse-Bench"
+    }
+  },
+  {
+    "id": "merrin",
+    "name": "MERRIN",
+    "title": "A Benchmark for Multimodal Evidence Retrieval and Reasoning in Noisy Web Environments",
+    "released": "2026-04",
+    "venue": "arXiv",
+    "scale": "162 questions",
+    "setting": "Noisy open web",
+    "process_evaluation": "gold-evidence-analysis",
+    "metrics": ["Final-answer Accuracy", "Gold URL Overlap", "Search Count", "Visit Count"],
+    "categories": ["noisy-web", "evidence-retrieval", "modality-selection"],
+    "links": {
+      "paper": "https://arxiv.org/abs/2604.13418",
+      "html": "https://arxiv.org/html/2604.13418v1",
+      "project": "https://merrin-benchmark.github.io/",
+      "code": "https://github.com/HanNight/MERRIN",
+      "dataset": "https://huggingface.co/datasets/HanNight/MERRIN"
+    }
+  },
+  {
+    "id": "interlv-search",
+    "name": "InterLV-Search",
+    "title": "Benchmarking Interleaved Multimodal Agentic Search",
+    "released": "2026-05",
+    "venue": "arXiv",
+    "scale": "2,061 samples",
+    "setting": "Open-web tool environment",
+    "process_evaluation": "visual-pivot-trajectory-analysis",
+    "metrics": ["Final-answer Accuracy", "Ret.R@5", "Acc.Ret", "Acc.UnRet", "Corr. from Ret"],
+    "categories": ["interleaved-search", "visual-pivot", "multi-branch"],
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.07510",
+      "html": "https://arxiv.org/html/2605.07510"
+    }
+  }
+]
