@@ -11,6 +11,7 @@
 ## 目录
 
 - [横向概览](#横向概览)
+- [视觉总览](#视觉总览)
 - [基础搜索 Benchmark](#基础搜索-benchmark)
 - [可验证浏览与过程评测](#可验证浏览与过程评测)
 - [视觉原生与交替搜索](#视觉原生与交替搜索)
@@ -39,6 +40,73 @@
 | InterLV-Search | 2026-05 | 2,061 个样本；开放网页工具 | Pivot 轨迹分析 | 图文交替控制搜索 |
 
 数据构建、Query 示例、评测指标和公开结果见[详细 Benchmark 笔记](docs/benchmark-notes.md)，机器可读版本见 [`data/benchmarks.json`](data/benchmarks.json)。
+
+## 视觉总览
+
+下面的核心图分别展示各项工作的 Benchmark 构建方式、视觉搜索轨迹、Query 修复、证据验证或 Agent 训练方法。点击图片可打开对应论文或项目页。图片从作者的官方来源远程加载，完整出处与使用说明见[图片来源](docs/image-sources.md)。
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://mmsearch.github.io/"><img src="https://mmsearch.github.io/static/images/overview_mv/image/teaser.png" alt="MMSearch Benchmark 总览" width="100%"></a><br>
+      <sub><b>MMSearch.</b> 将多模态搜索拆成可独立评测的阶段，覆盖 Query 改写、重排、网页总结与端到端回答。</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://mmsearch-plus.github.io/"><img src="https://mmsearch-plus.github.io/static/images/teaser.png" alt="MMSearch-Plus Agentic 视觉搜索对比" width="100%"></a><br>
+      <sub><b>MMSearch-Plus.</b> 不只依赖整图搜索，而是结合局部视觉线索、区域选择和来源感知浏览。</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/MMBrowseComp/MM-BrowseComp"><img src="https://raw.githubusercontent.com/MMBrowseComp/MM-BrowseComp/main/images/case.png" alt="MM-BrowseComp 多模态浏览案例" width="100%"></a><br>
+      <sub><b>MM-BrowseComp.</b> 将图片线索转化成可验证的多跳网页证据，并用 Checklist 检查每个必要推理步骤。</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://mc-search-project.github.io/"><img src="https://mc-search-project.github.io/website/img2/teaser_fig_mc_search_2.png" alt="MC-Search Benchmark 与推理图构建流程" width="100%"></a><br>
+      <sub><b>MC-Search.</b> 构建长链多模态问题，并将解题过程表示成结构化 Reasoning Graph。</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://arxiv.org/html/2602.02185v1"><img src="https://arxiv.org/html/2602.02185v1/x1.png" alt="VDR-Bench 视觉深度研究动机" width="100%"></a><br>
+      <sub><b>VDR-Bench.</b> 通过局部图搜索与多轮视觉 Grounding，减少纯文本和整图检索带来的捷径。</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://halcyon-zhang.github.io/BrowseComp-V3/"><img src="https://halcyon-zhang.github.io/BrowseComp-V3/static/images/overview.png" alt="BrowseComp-V3 Benchmark 构建流程" width="100%"></a><br>
+      <sub><b>BrowseComp-V3.</b> 将 Visual、Vertical、Verifiable 三类浏览能力与专家 Sub-goals、Gold Trajectory 结合。</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://arxiv.org/html/2605.07510v1"><img src="https://arxiv.org/html/2605.07510v1/x1.png" alt="InterLV-Search 图文交替搜索层级" width="100%"></a><br>
+      <sub><b>InterLV-Search.</b> 让图片充当后续搜索的控制 Pivot，并覆盖多分支的图文交替轨迹。</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://arxiv.org/html/2602.13179v1"><img src="https://arxiv.org/html/2602.13179v1/x1.png" alt="V-QPP-Bench 视觉 Query 预处理与检索" width="100%"></a><br>
+      <sub><b>V-QPP-Bench.</b> 在检索前为受损视觉 Query 选择合适的预处理工具和参数。</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Ruiyang-061X/VSearcher"><img src="https://raw.githubusercontent.com/Ruiyang-061X/VSearcher/main/.asset/method.png" alt="VSearcher 训练方法" width="100%"></a><br>
+      <sub><b>VSearcher.</b> 将合成长程任务转化成经过筛选的 SFT 轨迹，并在真实网页环境中进行强化学习。</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/ZhengboZhang/VisBrowse-Bench"><img src="https://raw.githubusercontent.com/ZhengboZhang/VisBrowse-Bench/main/images/overview.png" alt="VisBrowse-Bench 视觉原生浏览案例" width="100%"></a><br>
+      <sub><b>VisBrowse-Bench.</b> 覆盖必须使用搜图、反向搜图、局部裁剪和跨图推理的视觉原生问题。</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://agentvista-bench.github.io/"><img src="https://agentvista-bench.github.io/static/images/pipeline.png" alt="AgentVista 数据构建流程" width="100%"></a><br>
+      <sub><b>AgentVista.</b> 为通用 Agent 构建真实长程任务，组合网页、视觉、图像处理与代码工具。</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://merrin-benchmark.github.io/"><img src="https://merrin-benchmark.github.io/static/figure.png" alt="MERRIN 多模态证据推理与噪声网页路径" width="100%"></a><br>
+      <sub><b>MERRIN.</b> 在噪声或冲突网页来源中，测试视觉、音频和文本证据之间的隐式模态选择。</sub>
+    </td>
+  </tr>
+</table>
 
 ## 基础搜索 Benchmark
 
