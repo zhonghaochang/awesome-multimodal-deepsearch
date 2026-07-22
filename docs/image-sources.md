@@ -56,7 +56,7 @@ If you maintain one of these projects and would like a figure changed or removed
 
 ## AgentVista
 
-- Figure: [data construction pipeline](https://agentvista-bench.github.io/static/images/pipeline.png)
+- Figure: [task examples](https://agentvista-bench.github.io/static/images/data_examples.png)
 - Official source: [AgentVista project page](https://agentvista-bench.github.io/)
 
 ## MERRIN

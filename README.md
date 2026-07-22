@@ -53,24 +53,44 @@ The figures below highlight what each work contributes: benchmark construction, 
       <sub><b>MMSearch.</b> Decomposes multimodal search into measurable stages, from query rewriting to end-to-end answer generation.</sub>
     </td>
     <td width="50%" valign="top">
+      <a href="https://agentvista-bench.github.io/"><img src="https://agentvista-bench.github.io/static/images/data_examples.png" alt="AgentVista task examples" width="100%"></a><br>
+      <sub><b>AgentVista.</b> Curates realistic long-horizon tasks for generalist agents using web, vision, image processing, and code tools.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Ruiyang-061X/VSearcher"><img src="https://raw.githubusercontent.com/Ruiyang-061X/VSearcher/main/.asset/method.png" alt="VSearcher training method" width="100%"></a><br>
+      <sub><b>VSearcher.</b> Converts synthetic long-horizon tasks into filtered SFT trajectories and real-web reinforcement learning.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://arxiv.org/html/2602.13179v1"><img src="https://arxiv.org/html/2602.13179v1/x1.png" alt="V-QPP-Bench visual query preprocessing and retrieval" width="100%"></a><br>
+      <sub><b>V-QPP-Bench.</b> Repairs imperfect visual queries by selecting preprocessing tools and parameters before retrieval.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://mc-search-project.github.io/"><img src="https://mc-search-project.github.io/website/img2/teaser_fig_mc_search_2.png" alt="MC-Search benchmark and reasoning graph pipeline" width="100%"></a><br>
+      <sub><b>MC-Search.</b> Builds long-chain multimodal questions and represents their solutions as structured reasoning graphs.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://arxiv.org/html/2602.02185v1"><img src="https://arxiv.org/html/2602.02185v1/x1.png" alt="VDR-Bench visual deep research motivation" width="100%"></a><br>
+      <sub><b>VDR-Bench.</b> Removes text-only and whole-image shortcuts by requiring cropped-image search and multi-turn visual grounding.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <a href="https://mmsearch-plus.github.io/"><img src="https://mmsearch-plus.github.io/static/images/teaser.png" alt="MMSearch-Plus agentic visual search comparison" width="100%"></a><br>
       <sub><b>MMSearch-Plus.</b> Uses local visual clues, region selection, and provenance-aware browsing instead of whole-image search alone.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://merrin-benchmark.github.io/"><img src="https://merrin-benchmark.github.io/static/figure.png" alt="MERRIN multimodal evidence reasoning and noisy web routes" width="100%"></a><br>
+      <sub><b>MERRIN.</b> Tests implicit modality selection across visual, audio, and textual evidence under noisy or conflicting web sources.</sub>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/MMBrowseComp/MM-BrowseComp"><img src="https://raw.githubusercontent.com/MMBrowseComp/MM-BrowseComp/main/images/case.png" alt="MM-BrowseComp multimodal browsing examples" width="100%"></a><br>
       <sub><b>MM-BrowseComp.</b> Turns visual clues into verifiable multi-hop web evidence, with checklists for each required reasoning step.</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://mc-search-project.github.io/"><img src="https://mc-search-project.github.io/website/img2/teaser_fig_mc_search_2.png" alt="MC-Search benchmark and reasoning graph pipeline" width="100%"></a><br>
-      <sub><b>MC-Search.</b> Builds long-chain multimodal questions and represents their solutions as structured reasoning graphs.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://arxiv.org/html/2602.02185v1"><img src="https://arxiv.org/html/2602.02185v1/x1.png" alt="VDR-Bench visual deep research motivation" width="100%"></a><br>
-      <sub><b>VDR-Bench.</b> Removes text-only and whole-image shortcuts by requiring cropped-image search and multi-turn visual grounding.</sub>
     </td>
     <td width="50%" valign="top">
       <a href="https://halcyon-zhang.github.io/BrowseComp-V3/"><img src="https://halcyon-zhang.github.io/BrowseComp-V3/static/images/overview.png" alt="BrowseComp-V3 benchmark construction pipeline" width="100%"></a><br>
@@ -83,28 +103,8 @@ The figures below highlight what each work contributes: benchmark construction, 
       <sub><b>InterLV-Search.</b> Treats images as control pivots for later searches, including multi-branch language-vision trajectories.</sub>
     </td>
     <td width="50%" valign="top">
-      <a href="https://arxiv.org/html/2602.13179v1"><img src="https://arxiv.org/html/2602.13179v1/x1.png" alt="V-QPP-Bench visual query preprocessing and retrieval" width="100%"></a><br>
-      <sub><b>V-QPP-Bench.</b> Repairs imperfect visual queries by selecting preprocessing tools and parameters before retrieval.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/Ruiyang-061X/VSearcher"><img src="https://raw.githubusercontent.com/Ruiyang-061X/VSearcher/main/.asset/method.png" alt="VSearcher training method" width="100%"></a><br>
-      <sub><b>VSearcher.</b> Converts synthetic long-horizon tasks into filtered SFT trajectories and real-web reinforcement learning.</sub>
-    </td>
-    <td width="50%" valign="top">
       <a href="https://github.com/ZhengboZhang/VisBrowse-Bench"><img src="https://raw.githubusercontent.com/ZhengboZhang/VisBrowse-Bench/main/images/overview.png" alt="VisBrowse-Bench visual-native browsing examples" width="100%"></a><br>
       <sub><b>VisBrowse-Bench.</b> Covers visual-native questions that require image search, reverse-image search, cropping, and cross-image reasoning.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://agentvista-bench.github.io/"><img src="https://agentvista-bench.github.io/static/images/pipeline.png" alt="AgentVista data construction pipeline" width="100%"></a><br>
-      <sub><b>AgentVista.</b> Curates realistic long-horizon tasks for generalist agents using web, vision, image processing, and code tools.</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://merrin-benchmark.github.io/"><img src="https://merrin-benchmark.github.io/static/figure.png" alt="MERRIN multimodal evidence reasoning and noisy web routes" width="100%"></a><br>
-      <sub><b>MERRIN.</b> Tests implicit modality selection across visual, audio, and textual evidence under noisy or conflicting web sources.</sub>
     </td>
   </tr>
 </table>
